@@ -1,6 +1,9 @@
 import axios from "axios";
-const API_KEY = "wxmox89acyoz05t59"
-const BASE_URL = "https://techhk.aoscdn.com"
+const API_KEY = import.meta.env.VITE_API_KEY;
+const BASE_URL = import.meta.env.VITE_BASE_URL;
+
+export { API_KEY, BASE_URL };
+
 
 export const enhancedImageAPI =async (file) => {
      try{
